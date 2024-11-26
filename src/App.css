@@ -62,13 +62,16 @@
 html{
   scroll-behavior: smooth;
 }
-/* body{
+body{
   margin: 0;
   padding: 0; 
   box-sizing: border-box; 
-  display: flex; 
+  /* display: flex; 
   justify-content: center; 
   align-items: center; 
-  min-height: 100vh; 
-  overflow-x: hidden; 
-} */
+  min-height: 100vh;  */
+  /* overflow-x: hidden;  */
+}
+.App{
+  overflow-x: hidden;
+}

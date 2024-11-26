@@ -2,7 +2,7 @@ import React from 'react'
 import assa from '../images/aboutUs.jpg'
 export const AboutUs = () => {
   return (
-    <div className=' grid lg:grid-cols-2  place-items-center px-5' id='about' data-aos="fade-up" data-aos-delay="100">
+    <div className=' grid w-full lg:grid-cols-2  place-items-center px-5 overflow-hidden' id='about' data-aos="fade-up" data-aos-delay="100">
         <div className='lg:w-[40vw] lg:h-[55vh] md:w-[80vw] md:h-[60vh] lg:order-last md:order-first'>
             <img src={assa} className='w-[100%] h-[100%]'/>
         </div>
