@@ -3,6 +3,8 @@ import Isotope from "isotope-layout";
 import abb1 from "../images/abb-1.png";
 import abb2 from "../images/abb-2.gif";
 import abb3 from "../images/abb-3.jpg";
+import abb4 from "../images/abb-4.jpg";
+import abb5 from "../images/abb-5.webp";
 import abb from "../images/abb.png";
 import redlion from "../images/redlion.png";
 import redlion1 from "../images/redlion1.webp";
@@ -17,6 +19,13 @@ import klemsan4 from '../images/klemsan4.jpg'
 import inovance from '../images/inovance.jpg'
 import inovance1 from '../images/inovance1.png'
 import inovance2 from '../images/inovance2.png'
+import inovance3 from '../images/inovance3.webp'
+import inovance4 from '../images/inovance4.jpg'
+import inovance5 from '../images/inovance5.jpg'
+import kyland1 from '../images/kyland1.jpg'
+import kyland2 from '../images/kyland2.jpg'
+import kyland3 from '../images/kyland3.jpg'
+import kyland4 from '../images/kyland4.png'
 import hms from '../images/hms.png'
 import hms1 from '../images/hms1.jpg'
 import hms2 from '../images/hms2.avif'
@@ -66,6 +75,22 @@ export const Products = () => {
       image: abb3,
       shortDescription:"lorem epsum",
       description: "ABB's SCADA systems, such as ABB Ability™ Zenon and Compact HMI, offer comprehensive real-time monitoring and control for industrial processes. Advanced data analytics, seamless integration with other automation systems",
+      filterClass: "filter-abb",
+    },
+    {
+      id: 3,
+      title: "VFD",
+      image: abb4,
+      shortDescription:"lorem epsum",
+      description: "ABB's Variable Frequency Drives (VFDs) are advanced motor controllers that adjust the speed and torque of electric motors, enhancing energy efficiency and process control. These VFDs support various applications, from HVAC to complex industrial systems, providing smooth motor operation, reducing wear, and lowering energy costs. ABB VFDs also integrate seamlessly with SCADA systems for real-time monitoring and improved operational efficiency.",
+      filterClass: "filter-abb",
+    },
+    {
+      id: 3,
+      title: "DCS",
+      image: abb5,
+      shortDescription:"lorem epsum",
+      description: "ABB's Distributed Control Systems (DCS), such as ABB Ability™ System 800xA, Symphony Plus, and Freelance, provide centralized control and automation for complex industrial processes across sectors like power, chemicals, and oil & gas. These DCS solutions offer robust real-time control, monitoring, and data integration, allowing operators to make data-driven decisions, optimize production, and increase safety.",
       filterClass: "filter-abb",
     },
     {
@@ -126,6 +151,22 @@ export const Products = () => {
     },
     {
       id: 11,
+      title: "PLC",
+      image: inovance3,
+      shortDescription:"lorem epsum",
+      description: "Inovance PLCs (Programmable Logic Controllers) provide reliable, high-speed automation control for a range of industrial applications. Known for their flexibility, scalability, and robust performance, these PLCs support complex tasks, seamless integration, and easy programming. They’re ideal for optimizing processes in manufacturing, packaging, and other automated systems, ensuring efficient and precise control.",
+      filterClass: "filter-inovance",
+    },
+    {
+      id: 11,
+      title: "HMI",
+      image: inovance5,
+      shortDescription:"lorem epsum",
+      description: "Inovance HMIs (Human Machine Interfaces) offer intuitive, user-friendly interfaces for real-time monitoring and control of industrial processes. With high-resolution displays, customizable screens, and easy integration, they enhance operator efficiency and system oversight. Ideal for applications in automation, Inovance HMIs streamline interaction between users and machines, improving operational productivity.",
+      filterClass: "filter-inovance",
+    },
+    {
+      id: 11,
       title: "Industrial Robots",
       image: inovance1,
       shortDescription:"lorem epsum",
@@ -139,6 +180,46 @@ export const Products = () => {
       shortDescription:"lorem epsum",
       description: "The Inovance Medium Voltage AC Drive is a high-performance solution designed for demanding industrial applications. It offers exceptional energy efficiency, precise control, and robust reliability, making it ideal for heavy-duty operations. With advanced features such as dynamic response and seamless integration capabilities, the Inovance Medium Voltage AC Drive ensures optimal performance and operational efficiency across various industries.",
       filterClass: "filter-inovance",
+    },
+    {
+      id: 12,
+      title: "Servo Motors",
+      image: inovance4,
+      shortDescription:"lorem epsum",
+      description: "Inovance servo motors deliver precise, high-performance motion control ideal for automation in industries like robotics, CNC machinery, and packaging. They feature compact designs, high torque density, and robust thermal stability, ensuring reliable operation and easy integration with compatible drives for seamless, efficient performance in demanding applications.",
+      filterClass: "filter-inovance",
+    },
+    {
+      id: 12,
+      title: "UnManaged Switches",
+      image: kyland1,
+      shortDescription:"lorem epsum",
+      description: "Kyland unmanaged switches provide reliable, plug-and-play network connectivity for industrial environments. Built for durability and efficient data transmission, these switches are ideal for applications needing basic network integration without complex configurations. With rugged designs to withstand harsh conditions, Kyland unmanaged switches are suited for sectors like automation, energy, and transportation.",
+      filterClass: "filter-kyland",
+    },
+    {
+      id: 12,
+      title: "Optical Fibre Converters",
+      image: kyland2,
+      shortDescription:"lorem epsum",
+      description: "Kyland optical fiber converters enable seamless data transmission over long distances by converting Ethernet signals to fiber optics. Designed for industrial use, these converters offer high-speed, reliable connectivity and resilience in harsh environments. Ideal for automation, transportation, and energy sectors, they ensure secure, stable communication across extended networks.",
+      filterClass: "filter-kyland",
+    },
+    {
+      id: 12,
+      title: "Rack Mount Ethernet Switches",
+      image: kyland3,
+      shortDescription:"lorem epsum",
+      description: "Kyland rack mount Ethernet switches provide high-density, reliable network connectivity tailored for industrial applications. With advanced management features and robust performance, these switches support efficient data handling in critical environments. Ideal for sectors like transportation, energy, and automation, Kyland’s rack mount switches ensure stable, high-speed communication and scalability in industrial networks.",
+      filterClass: "filter-kyland",
+    },
+    {
+      id: 12,
+      title: " Layer 3 backbone switches",
+      image: kyland4,
+      shortDescription:"lorem epsum",
+      description: "Kyland Layer 3 backbone switches deliver high-performance routing and switching for complex industrial networks. They support advanced data management, security, and redundancy, making them ideal for large-scale applications in energy, transportation, and automation. These switches ensure reliable, high-speed connectivity and efficient network traffic handling across critical infrastructure.",
+      filterClass: "filter-kyland",
     },
     {
       id: 13,
@@ -285,6 +366,12 @@ export const Products = () => {
           onClick={() => handleFilter(".filter-inovance")}
         >
           Inovance
+        </li>
+        <li
+          className={`cursor-pointer ${filterKey === ".filter-kyland" ? "text-[#009970]" : ""} hover:text-[#009970]`}
+          onClick={() => handleFilter(".filter-kyland")}
+        >
+          Kyland
         </li>
         <li
           className={`cursor-pointer ${filterKey === ".filter-hms" ? "text-[#009970]" : ""} hover:text-[#009970]`}

@@ -1,11 +1,11 @@
 import React from 'react'
 export const Contacts = () => {
   return (
-    <div className='md:p-5 lg:p-5 px-3' id='contacts mt-5'>
-        <h1 className='px-5 mb-3' data-aos="fade-up" data-aos-delay="100">Contact Us</h1>
-        <p data-aos="fade-up" data-aos-delay="100" className='px-5 text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700'>Get in touch with us for tailored solutions to meet your business needs. Reach out through the form below, and we'll be happy to assist you.</p>
+    <div className='md:p-5 lg:p-5 px-3' id='contacts'>
+        <h1 className='px-5 mb-3' >Contact Us</h1>
+        <p className='px-5 text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700'>Get in touch with us for tailored solutions to meet your business needs. Reach out through the form below, and we'll be happy to assist you.</p>
     
-        <div className=' lg:flex lg:gap-8 md:px-5 lg:px-2 lg:ml-5 w-[100vw]  pb-2' data-aos="fade-up" data-aos-delay="100">
+        <div className=' lg:flex lg:gap-8 md:px-5 lg:px-2 lg:ml-5 w-[100vw]  pb-2' >
             <div className=' lg:w-[40%] w-[95%] md:w-[100%] p-5 md:shadow-lg lg:shadow-2xl md:border-2 border-2 shadow-md  mt-4 ' >
             
                 <div> 
