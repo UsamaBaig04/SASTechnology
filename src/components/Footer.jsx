@@ -49,15 +49,11 @@ export const Footer = () => {
                 <div className=' md:pl-2  w-[70vw] lg:w-full'>
                 <h5 className='lg:p-2'>Contact Us</h5>
                <p className='lg:text-lg md:text-lg'>
-               58, Unit, Police Chowki, 
+                Building No. 3808, 25 Street,
 
-                Shree Sant Dnyaneshwar Industrial Estate 
-
-                Plot 59, no 08, Mohan Nagar Main Rd, 
-
-                Near Mohanagar, D-II Block, MIDC, 
-
-                Pimpri-Chinchwad, Maharashtra 41101
+               Ath Thuqbah Dist 34625,
+                AlKhobar, Saudi Arabia
+                
                </p>
                <p className='leading-[.7rem] md:leading-[.1rem] lg:leading-3 md:text-lg'><span className='font-bold'>Phone:</span> +91-900-329-2301</p>
                <p className='leading-[.7rem] lg:leading-3 md:text-lg'><span className='font-bold'>Email:</span> marketing@sasnextgen.co.in</p>
