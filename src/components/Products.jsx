@@ -321,11 +321,18 @@ export const Products = () => {
     document.body.classList.remove("overflow-hidden");
   };
 
+   const handleGetQuote =()=>{
+    const contactsSection = document.getElementById('contacts');
+    if (contactsSection) {
+      contactsSection.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
+
   return (
     <div className="px-5 w-[100vw] mt-5 mb-4" id='products'  >
       <div data-aos="fade-up" data-aos-delay="100">
-        <h1 className="mb-3">Products</h1>
-        <p className="text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700">Explore our wide range of innovative products designed to meet your industrial needs.</p>
+        <h1 className="mb-3 raleway">Products</h1>
+        <p className="text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700 roboto">Explore our wide range of innovative products designed to meet your industrial needs.</p>
       </div>
 
       {/* Filter buttons */}
@@ -336,7 +343,7 @@ export const Products = () => {
         </svg>
       </button>
       <div className="overflow-x-auto scrollbar-hide  w-full">
-      <ul ref={ulRef} className="flex  lg:justify-center space-x-5 md:space-x-5 lg:space-x-10  mb-0 text-lg md:text-base lg:text-2xl font-semibold overflow-x-auto ">
+      <ul ref={ulRef} className="flex  lg:justify-center space-x-5 md:space-x-5 lg:space-x-10  mb-0 text-lg md:text-base lg:text-2xl font-semibold overflow-x-auto roboto">
         <li
           className={`cursor-pointer ${filterKey === "*" ? "text-[#009970]" : ""} hover:text-[#009970]`}
           onClick={() => handleFilter("*")}
@@ -406,26 +413,27 @@ export const Products = () => {
       </button>
       </div>
       {/* Portfolio grid */}
-      <div data-aos="fade-up" data-aos-delay="100" className="isotope-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 h-auto md:px-5 lg:px-5 md:pt-4 lg:pt-4 md:pb-5 lg:pb-5 mt-2" >
+      <div data-aos="fade-up" data-aos-delay="100" className="isotope-container grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 h-auto md:px-5 lg:px-5 md:pt-4 lg:pt-4 md:pb-5 lg:pb-5 mt-2 " >
         {products.map((product) => (
           <div
             key={product.id}
             className={`portfolio-item ${product.filterClass}  shadow-lg lg:w-full h-auto cursor-pointer bg-slate-50`}
            
           >
-            <div className="portfolio-content h-[100%] ">
+            <div className="portfolio-content h-[100%] bg-white">
               {/* <img src={product.image} alt={product.title} className="w-full h-2/3 p-2" /> */}
-              <div className="w-full h-2/3 p-2 overflow-hidden">
+              <div className="w-full h-[60%] p-2 overflow-hidden">
                 <img
                   src={product.image}
                   alt={product.title}
                   className="w-full h-full  transform transition-transform duration-300 hover:scale-110"
                 />
               </div>
-              <div className="px-4 py-2 h-auto ">
-                <h4 className="text-sm md:text-lg lg:text-2xl font-semibold">{product.title}</h4>
+              <div className="px-4 py-2 h-[40%] flex flex-col justify-center">
+                <h4 className="text-sm md:text-lg lg:text-xl xl:text-lg 2xl:text-2xl font-semibold raleway">{product.title}</h4>
                 {/* <p className="text-sm md:text-base lg:text-lg">{product.shortDescription}</p> */}
-                <button className="bg-[#009970] p-2 text-sm md:text-base lg:text-xl text-white rounded-md" onClick={() => handleOpenModal(product)}>Get More Info</button>
+                {/* <button className="bg-[#009970] p-2 text-sm md:text-base lg:text-xl text-white rounded-md" onClick={() => handleOpenModal(product)}>Get More Info</button> */}
+                <button className="bg-[#009970] p-2 lg:p-5  text-sm md:text-base lg:text-lg 2xl:text-xl 2xl:mt-2 2xl:rounded-xl text-white rounded-md raleway" onClick={handleGetQuote}>Get Quote</button>
               </div>
             </div>
           </div>

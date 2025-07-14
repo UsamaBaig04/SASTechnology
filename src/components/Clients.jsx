@@ -14,8 +14,8 @@ export const Clients = () => {
   return (
     <div data-aos="fade-up" data-aos-delay="100">
         <div className='px-5 md:mb-5 lg:mb-5 mb-4'>
-            <h1 className='mb-3'>Our Clients</h1>
-            <p className='text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700'>Meet our valued clients who trust us for their digital transformation and automation solutions.</p>
+            <h1 className='mb-3 raleway'>Our Clients</h1>
+            <p className='text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700 roboto'>Meet our valued clients who trust us for their digital transformation and automation solutions.</p>
         </div>
         <div className='grid place-items-center lg:place-items-start gap-y-10 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 w-[100vw]  md:px-5 lg:px-20 md:mb-5 lg:mb-5 mb-4'>
             <div className='w-[40vw] md:w-[25vw] lg:w-[20vw] h-[20vh] flex justify-center items-center shadow-xl border-2'>

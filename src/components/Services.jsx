@@ -75,14 +75,14 @@ export const Services = () => {
   return (
     <div className='w-[100vw] mt-5' id='services'>
       <div className='px-5'>
-        <h1 className='mb-3'>Our Services</h1>
-        <p className='text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700'>SAS is a digital transformation partner specializing in IIoT solutions that connect devices to networks, enabling continuous data collection and analysis to improve industrial efficiency, speed, safety, and performance across sectors.</p>
+        <h1 className='mb-3 raleway'>Our Services</h1>
+        <p className='text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700 roboto'>SAS is a digital transformation partner specializing in IIoT solutions that connect devices to networks, enabling continuous data collection and analysis to improve industrial efficiency, speed, safety, and performance across sectors.</p>
       </div>
-      <div className='grid md:grid-cols-2 lg:grid-cols-3 gap-4 lg:w-3/4 md:mx-auto lg:mx-auto   px-2'>
+      <div className='grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 lg:px-10 xl:grid-cols-3 2xl:grid-cols-4 xl:mx-10 gap-4  md:mx-5 lg:mx-10   px-2'>
         {servicesData.map(service => (
           <div 
             key={service.id} 
-            className='rounded-xl shadow-lg bg-white border-2 px-4 py-4 lg:w-full w-full transition-transform transform hover:-translate-y-2 cursor-pointer' 
+            className='rounded-xl shadow-lg bg-white border-2 px-4 py-4 sm:w-[100%] lg:w-full w-full transition-transform transform hover:-translate-y-2 cursor-pointer' 
             onClick={() => handleCardClick(service)} data-aos="fade-up" data-aos-delay="100"
           >
             <div className='mb-4'>
@@ -90,8 +90,8 @@ export const Services = () => {
                 <MdMonitorHeart size={30} />
               </div>
             </div>
-            <div className='mb-2 text-lg md:text-xl lg:text-2xl font-bold text-[#009970]'>{service.title}</div>
-            <p className='mt-3 text-base md:text-base lg:text-lg'>{service.subheading}</p>
+            <div className='mb-2  text-lg md:text-xl lg:text-2xl font-bold text-[#009970] raleway'>{service.title}</div>
+            <p className='mt-3 text-base md:text-base lg:text-lg roboto'>{service.subheading}</p>
           </div>
         ))}
       </div>
