@@ -33,7 +33,7 @@ export const Contacts = () => {
           <div>
             <h4 className='raleway'>Call Us</h4>
             <p className='lg:text-xl md:text-lg 2xl:text-xl roboto'>
-              +91-900-329-2301   +91-895-648-6237  +91-985-041-8036
+              +96-659-338-2499 +96-653-858-4823
             </p>
           </div>
           <div>

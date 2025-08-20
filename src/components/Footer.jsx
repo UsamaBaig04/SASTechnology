@@ -1,6 +1,7 @@
 import React from 'react'
 import { AiOutlineYoutube } from "react-icons/ai";
-import { FaFacebook,FaLinkedin,FaInstagram } from "react-icons/fa6";
+import { FaFacebook,FaLinkedin,FaInstagram,FaCircleArrowUp} from "react-icons/fa6";
+import { FaArrowAltCircleUp } from "react-icons/fa";
 
 export const Footer = () => {
   return (
@@ -25,7 +26,7 @@ export const Footer = () => {
                     
                 </div>
             </div>
-            <div className='grid grid-cols-2 xl:grid-cols-[25%,35%,40%]  2xl:w-[50%] pt-2'>
+            <div className='grid sm:grid-cols-2 xl:grid-cols-[25%,35%,40%]  2xl:w-[50%] pt-2'>
                 <div className=''>
                     <h5 className='p-2 raleway'>Useful Links</h5>
                     <ul className='[&>li]:leading-10 lg:text-lg  md:text-lg [&>li]:hover:cursor-pointer roboto'>
@@ -37,7 +38,7 @@ export const Footer = () => {
                     </ul>
                 </div>
                 <div className=''>
-                <h5 className='p-2 lg:ml-5 md:ml-5 ml-3 raleway'>Our Services</h5>
+                <h5 className='p-2 lg:ml-5 md:ml-5 ml-3 raleway '>Our Services</h5>
                 <ul className='[&>li]:leading-10 lg:text-lg md:text-lg roboto'>
                         <li className='hover:text-[#009970] hover:cursor-pointer'>Production Monitoring</li>
                         <li className='hover:text-[#009970] hover:cursor-pointer'>Alarm Monitoring</li>
@@ -54,7 +55,7 @@ export const Footer = () => {
                 AlKhobar, Saudi Arabia
                 
                </p>
-               <p className='leading-[.7rem] md:leading-[.1rem] lg:leading-3 md:text-lg roboto'><span className='font-bold'>Phone:</span> +91-900-329-2301</p>
+               <p className='leading-[.7rem] md:leading-[.1rem] lg:leading-3 md:text-lg roboto'><span className='font-bold'>Phone:</span> +96-659-338-2499</p>
                <p className='leading-[.7rem] lg:leading-3 md:text-lg roboto'><span className='font-bold'>Email:</span> marketing@sasnextgen.co.in</p>
                 </div>
             </div>
@@ -62,7 +63,11 @@ export const Footer = () => {
         <div className='flex flex-col w-[100%]  items-center bg-slate-200 justify-center items center text-center py-2 px-2'>
             <p className='md:text-lg lg:text-xl text-sm roboto'>&copy; Copyright <span className='text-[#009970] font-semibold raleway'>SAS Technology</span> All Rights Reserved</p>
             <p className='leading-[.1rem] md:leading-[.1rem] lg:leading-[.2rem] md:text-lg lg:text-xl text-sm roboto'>Designed by <span className='text-[#009970] font-semibold raleway'>SAS Technology</span></p>
+            <div className=' absolute right-0 md:px-16 hidden md:flex'>
+            <a href='#home'><FaCircleArrowUp   className='text-[#009970] text-4xl 2xl:text-4xl'/></a>
+            </div> 
         </div>
+        
     </div>
   )
 }

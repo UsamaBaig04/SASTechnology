@@ -43,6 +43,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   /* overflow-x: hidden; */
   /* font-family: 'Roboto', 'Arial', sans-serif; */
+  background-color: #fff;
 }
 
 code {

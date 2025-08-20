@@ -329,7 +329,7 @@ export const Products = () => {
   }
 
   return (
-    <div className="px-5 w-[100vw] mt-5 mb-4" id='products'  >
+    <div className=" w-[100vw] mt-5 mb-4  px-5" id='products'  >
       <div data-aos="fade-up" data-aos-delay="100">
         <h1 className="mb-3 raleway">Products</h1>
         <p className="text-base md:text-lg lg:text-xl font-semibold mb-4 text-gray-700 roboto">Explore our wide range of innovative products designed to meet your industrial needs.</p>
