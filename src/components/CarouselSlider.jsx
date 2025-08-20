@@ -1,6 +1,6 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import assa from '../images/wm2.jpg';
+import assa from '../images/oil.jpg';
 import assb from '../images/oilCarousel.png'
 export const CarouselSlider = () => {
   return (
